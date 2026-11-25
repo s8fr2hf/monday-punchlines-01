@@ -8,10 +8,11 @@ import os
 import stat
 import sys
 
-LINE = (
-    "Monday morning is when my inbox and my motivation have their "
-    "weekly custody hearing \u2014 and motivation never shows up."
-)
+_PARTS = [
+    "Monday morning is when my inbox and my motivation",
+    "have their weekly custody hearing \u2014 and motivation never shows up.",
+]
+LINE = " ".join(_PARTS)
 
 
 def main() -> int:
